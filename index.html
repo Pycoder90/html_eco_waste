@@ -1,6 +1,7 @@
 <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+
 <style>
   label > input[type="radio"] {
   display: none;
@@ -24,73 +25,54 @@ label > input[type="radio"] + *::before {
 <link rel="stylesheet" href="css/bootstrap-multiselect.css">
 <!-- Bootstrap Multiselect JS -->
 <script data-main="dist/js/" src="js/require.min.js"></script>
-<div class="grid grid-cols-3 gap-0 bg-purple-800 h-96 w-auto">
+<div class="grid grid-cols-3 gap-0 bg-gray-300 h-96 w-auto">
    <!--div class="circle bg-red-400 h-auto w-auto "></div-->
-   <div class="1 bg-teal-500 h-auto">
+   <div class="1 ml-36 h-auto">
       <div>
-         <p>select what you have</p>
-         <div class="form-check">
+         <p class="text-lg font-bold -tracking-wider">select what you have</p>
+         <div class="form-check mt-5">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-            Papers<br><small>(Newspapers, magazines etc.)</small>
+            <label class=" text-sm form-check-label" for="exampleRadios1">
+            Papers<div class="pl-4 -mt-1"><small>(Newspapers, magazines etc.)</small></div>
             </label>
          </div>
          <div class="form-check">
             <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-            Light weight e-waste<br><small>keyboard, monitors, mobiles </small>
+            <label class="text-sm form-check-label" for="exampleRadios2">
+            Light weight e-waste<div class="pl-4 -mt-1"><small>(keyboard, monitors, mobiles, etc)</small></div>
             </label>
          </div>
          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-            <label class="form-check-label" for="exampleRadios3">
-            Disabled radio
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+            <label class="form-check-label text-sm" for="exampleRadios3">
+            Large appliances<div class="pl-4 -mt-1"><small>(Refrigerator, T.V, Washing Machines, etc)</small></div>
             </label>
          </div>
       </div>
    </div>
-   <div class="2 bg-pink-400">
-      <p>how would you like to sell your paper ?</p>
-      <div class="grid grid-cols-2 gap-0 bg-red-800 h-auto w-auto">
-         <div class="form-check form-check-inline bg-zinc-100">
-            <p>Non-periodic</p>
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1"><small>Onetime</small></label>
+   <div class="2">
+      <p class="text-lg font-bold -tracking-wider">how would you like to sell your paper ?</p>
+      <div class="grid grid-cols-2 gap-0  mt-5 h-auto w-auto">
+         <div class="form-check form-check-inline">
+            <p class="text-sm">Non-periodic</p>
+            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label ml-2" for="inlineCheckbox1"><small>Onetime</small></label>
          </div>
-         <div class="form-check form-check-inline bg-lime-500">
-            <p>periodic</p>
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-            <label class="form-check-label" for="inlineCheckbox3"><small>Monthly</small></label>
+         <div class="form-check form-check-inline">
+            <p class="text-sm first-letter:">periodic</p>
+            <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label ml-1" for="inlineCheckbox3"><small>Monthly</small></label>
          </div>
       </div>
-      <div class="bg-white w-auto h-auto">
+      <div class="w-auto mt-5 h-auto">
          <p>select what you have</p>
-         <ul>
-    <li class="dropdown">
-        <data-toggle="dropdown" class="dropdown-toggle">Dropdown Form<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <li>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox">Two
-                    </label>
-                </div>
-            </li>
-            <li>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox">Two
-                    </label>
-                </div>
-            </li>
-        </ul>
-    </li>
-</ul>
+      
 
       </div>
    </div>
    <div class="3 m-auto p-auto text-4xl">Image here</div>
-   <div class="4">4</div>
-   <div class="5">5</div>
+
 </div>
+
+<hr>
 
